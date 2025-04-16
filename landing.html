@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Pay - Transformando Pagos en Argentina</title>
+    <style>
+        /* Estilos CSS para un diseño amigable e intuitivo */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #004aad;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #004aad;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .benefits, .testimonials {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .cta {
+            background-color: #004aad;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .cta a {
+            background-color: #ff6200;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .cta a:hover {
+            background-color: #e55a00;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Estilos responsive para móviles */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Stellar Pay</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#solucion">Solución</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <section class="hero" id="inicio">
+        <h2>Transformando Pagos en Argentina con Blockchain</h2>
+    </section>
+
+    <!-- Sección: El Desafío -->
+    <section class="section" id="solucion">
+        <h3>El Desafío</h3>
+        <p>Argentina enfrenta restricciones cambiarias, volatilidad del peso y altos costos de transacción, dificultando que turistas y comerciantes realicen pagos rápidos y seguros.</p>
+    </section>
+
+    <!-- Sección: Nuestra Solución -->
+    <section class="section">
+        <h3>Nuestra Solución</h3>
+        <p>Stellar Pay es una plataforma que permite a turistas pagar en USDT a través de la red Stellar, con conversión instantánea a ARS para comerciantes. Rápida, segura y de bajo costo.</p>
+    </section>
+
+    <!-- Sección: Beneficios para Inversores -->
+    <section class="section benefits" id="beneficios">
+        <h3>¿Por Qué Invertir?</h3>
+        <p>- <strong>Reducción de Costos:</strong> Bajas comisiones gracias a Stellar.<br>
+           - <strong>Mercado en Crecimiento:</strong> Alta demanda en Argentina.<br>
+           - <strong>Escalabilidad:</strong> Potencial para expandirse globalmente.</p>
+    </section>
+
+    <!-- Sección: Testimonios -->
+    <section class="section testimonials">
+        <h3>Voces del Éxito</h3>
+        <p>"Stellar Pay simplificó mis ventas a turistas. Recibo ARS al instante sin preocuparme por el dólar." — Juan, Comerciante en Buenos Aires</p>
+    </section>
+
+    <!-- Llamado a la Acción -->
+    <section class="cta" id="contacto">
+        <h3>Sea Parte de la Revolución</h3>
+        <p>Invierta en Stellar Pay y forme parte de la solución fintech del futuro.</p>
+        <a href="mailto:contacto@stellarpay.com">Contáctenos</a>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Stellar Pay. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para interactividad básica -->
+    <script>
+        // Animación suave al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            const hero = document.querySelector('.hero');
+            hero.style.opacity = 0;
+            setTimeout(() => {
+                hero.style.transition = 'opacity 1s';
+                hero.style.opacity = 1;
+            }, 500);
+        });
+
+        // Efecto de desplazamiento suave para los enlaces
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
